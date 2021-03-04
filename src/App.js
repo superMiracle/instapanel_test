@@ -1,4 +1,5 @@
 import React from "react";
+import "antd/dist/antd.css";
 import "./styles.css";
 // API endpoint: https://api.punkapi.com/v2/beers
 // Documentation: https://punkapi.com/documentation/v2
@@ -40,12 +41,14 @@ import "./styles.css";
 //
 // 5. Clicking a bar of the bar chart should display the beer detail modal or page and should be consistent with clicking on the photo.
 
+import Main from "./pages/Main";
+
 const App = () => (
-  <div className="App">
+  <div className='App'>
     <h1>Hello from Instapanel!</h1>
-    <h2>
-      Take a look at <code>App.js</code> to get started.
-    </h2>
+    <div>
+      <Main />
+    </div>
   </div>
 );
 
