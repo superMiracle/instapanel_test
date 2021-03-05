@@ -45,13 +45,21 @@ const Main: React.FC = () => {
   return (
     <Content style={{ padding: "50px" }}>
       <Row className='row'>
-        <Col span={12} offset={6} className='gutter-row'>
+        <Col
+          md={{ span: 20, offset: 2 }}
+          lg={{ span: 12, offset: 6 }}
+          className='gutter-row'
+        >
           <BeerChart beers={beers} />
         </Col>
       </Row>
 
       <Row className='row'>
-        <Col span={16} offset={4} className='gutter-row'>
+        <Col
+          md={{ span: 22, offset: 1 }}
+          lg={{ span: 16, offset: 4 }}
+          className='gutter-row'
+        >
           <BeerTable data={beers} total={total} paginate={paginate} />
         </Col>
       </Row>
